@@ -32,3 +32,41 @@ h1{position:relative}.title-heart{display:inline-block;color:#ef7588;font-family
 @media(max-width:560px){.love-strip{margin-bottom:70px}.love-strip>div{padding:14px}.photo-frame{border-width:6px}.photo-note{font-size:14px;top:-7px}.heart-one{right:-2px}.cta-box{border-radius:32px}.primary{width:100%}.hero-actions{padding-inline:24px}}
 .family-caption{position:absolute;z-index:4;left:50%;bottom:4px;transform:translateX(-50%) rotate(-1deg);min-width:230px;background:#fffdf9eF;border:1px solid #f0dfe0;border-radius:18px;padding:11px 18px;text-align:center;box-shadow:0 10px 25px #5d42481c}.family-caption strong,.family-caption small{display:block}.family-caption strong{font-family:"Kalam",cursive;color:#a84558;font-size:17px}.family-caption small{color:var(--muted);font-size:10px;letter-spacing:.04em;margin-top:1px}
 @media(max-width:560px){.family-caption{bottom:-3px;min-width:210px;padding:8px 14px}.family-caption strong{font-size:15px}}
+
+/* Polished blush refinement */
+:root{
+  --ink:#302b32;
+  --muted:#716971;
+  --paper:#fffafb;
+  --orange:#d96f87;
+  --peach:#f8d9d7;
+  --pink:#f3c9d7;
+  --dark:#3c3743;
+}
+body{font-weight:400;background-color:var(--paper);background-image:radial-gradient(circle at 8% 7%,#f7dce4 0 1.5px,transparent 2px),radial-gradient(circle at 94% 12%,#f5e1e4 0 1.5px,transparent 2px)}
+.brand{font-weight:600}.nav-cta{font-weight:500}
+h1,h2{font-weight:500;letter-spacing:-.035em}h1{font-size:clamp(49px,5.2vw,76px)}h1 em,h2 em{font-weight:500;color:#d76f86}
+.eyebrow,.section-label,.mini-label{font-weight:600;letter-spacing:.13em}
+.hero-lead{font-size:18px;line-height:1.75}
+.button,.text-link{font-weight:600}.primary{background:#403a49;box-shadow:5px 6px 0 #efb7c5}
+.trust-row strong,.floating-card strong,.love-strip strong{font-weight:600}
+.photo-frame{box-shadow:14px 16px 0 #f2cbd5,0 24px 55px #8e596619}
+.photo-note{font-weight:500;background:#fff8e0;box-shadow:3px 4px 0 #ead6b5}
+.marquee{background:#403a49;border-top-color:#edc4cf;border-bottom-color:#edc4cf}
+.intro-grid>div p:first-child,.section-heading>p,.benefit-copy>p{line-height:1.75}
+.accent-note,.tag{font-weight:600}
+.learn{background:#fbf2f4}.learn-card{border-radius:24px}.learn-card h3{font-weight:500}.learn-card p{color:#5b5359}
+.benefit-copy h2{font-weight:500}.benefit-copy li{font-weight:500}
+.blob{background:linear-gradient(145deg,#e48a9d,#d86d84);box-shadow:18px 18px 0 #f1ccd5}.blob strong{font-weight:600}
+.cta-box{background:linear-gradient(135deg,#49434f,#35313c);box-shadow:0 16px 0 #edc9d2}.cta-box h2{font-weight:500}
+.whatsapp{font-weight:600}
+@media(max-width:560px){
+  .hero h1{font-size:44px}.hero-lead{font-size:16px}.intro h2,.section-heading h2{font-size:39px}.benefit-copy h2{font-size:42px}.cta-box h2{font-size:37px}
+  .hero-visual{min-height:330px;margin-top:10px}
+  .photo-frame{width:100%;height:auto;aspect-ratio:1266/946;border-radius:30px;transform:none;box-shadow:10px 12px 0 #f2cbd5,0 18px 40px #8e596617}
+  .photo-frame img{object-fit:cover;object-position:center}
+  .photo-note{left:12px;top:-18px}
+  .time-card{left:-4px;top:34px;transform:rotate(-3deg)}
+  .phone-card{right:-4px;bottom:14px;transform:rotate(2deg)}
+  .family-caption{bottom:-15px}
+}
