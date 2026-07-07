@@ -9,6 +9,8 @@ const lessons = [
   ['cream', '◉', 'Voice Se AI', 'Typing ki tension nahi. Apni awaaz se sawaal poochhein aur kaam karwayein.', 'Speak naturally'],
 ];
 
+const whatsappUrl = 'https://wa.me/919811179259?text=Hi%20Dolly%2C%20mujhe%20simple%20Hindi%2FHinglish%20mein%20AI%20seekhna%20hai.';
+
 function Brand() {
   return <a className="brand" href="#top"><span className="brand-mark">dr</span><span>Dolly ki AI Saheli</span></a>;
 }
@@ -25,14 +27,14 @@ function App() {
   }, []);
 
   return <>
-    <nav className="nav wrap" aria-label="Main navigation"><Brand /><a className="nav-cta" href="#start">Free mein jaanein <span>→</span></a></nav>
+    <nav className="nav wrap" aria-label="Main navigation"><Brand /><a className="nav-cta" href={whatsappUrl} target="_blank" rel="noopener noreferrer">Free mein jaanein <span>→</span></a></nav>
     <main id="top">
       <section className="hero wrap">
         <div className="hero-copy reveal">
           <div className="eyebrow"><span>♡</span> Dolly Raj ke saath easy AI learning</div>
           <h1>Housewife ke liye<br /><em>AI seekhna</em> ab easy hai.<span className="title-heart" aria-hidden="true">♥</span></h1>
           <p className="hero-lead">Ghar, bachche, sapne — sab sambhalte hue, ab technology se dosti kijiye. Mobile par, simple language mein.</p>
-          <div className="hero-actions"><a className="button primary" href="#start">Aaj se start karein <span>→</span></a><a className="text-link" href="#learn">Kya seekhengi? <span>↓</span></a></div>
+          <div className="hero-actions"><a className="button primary" href={whatsappUrl} target="_blank" rel="noopener noreferrer">Aaj se start karein <span>→</span></a><a className="text-link" href="#learn">Kya seekhengi? <span>↓</span></a></div>
           <div className="trust-row"><div className="avatars" aria-hidden="true"><span>न</span><span>स</span><span>प</span></div><p><strong>English zaroori nahi.</strong><br />Bas seekhne ki ichha chahiye.</p></div>
         </div>
         <div className="hero-visual reveal delay-1">
@@ -50,7 +52,7 @@ function App() {
       <section className="prompt-demo wrap"><div className="prompt-copy"><span className="mini-label">Bas boliye ya type kijiye</span><h3>“Mere child ko Class 5 Maths easy way mein samjhao.”</h3><p>AI aapki language samajhta hai — Hindi, Hinglish, ya voice typing.</p></div><div className="chat-window" aria-label="ChatGPT conversation example"><div className="chat-top"><span className="dots">● ● ●</span><strong>AI Assistant</strong><span>✦</span></div><div className="message user">Kal ke liye simple lunch idea batao.</div><div className="message bot"><span>✦</span><div>Bilkul! Aap veg pulao, raita aur cucumber salad bana sakti hain. Tasty bhi, easy bhi! 😊</div></div><div className="typing">Hindi mein message likhein… <span>➤</span></div></div></section>
       <section id="learn" className="learn section"><div className="wrap"><div className="section-heading"><div><div className="section-label">Aap kya seekhengi?</div><h2>Roz ke kaam, ab aur<br /><em>smart tareeke se. ♡</em></h2></div><p>Step-by-step, simple examples ke saath. Har lesson aapki real life se juda hua.</p></div><div className="cards">{lessons.map((lesson, index) => <article className={`learn-card ${lesson[0]}`} key={lesson[2]}><span className="card-number">{String(index + 1).padStart(2, '0')}</span><div className="card-icon">{lesson[1]}</div><h3>{lesson[2]}</h3><p>{lesson[3]}</p><span className="tag">{lesson[4]}</span></article>)}</div></div></section>
       <section className="benefits wrap section"><div className="benefit-art"><div className="blob"><span>30</span><strong>MIN</strong><small>roz</small></div><div className="orbit one">✦</div><div className="orbit two">♡</div><div className="orbit three">⌁</div></div><div className="benefit-copy"><div className="section-label">Chhoti practice, bada confidence</div><h2>Sirf 30 minute roz.</h2><p>Dheere-dheere technology easy lagne lagegi, kaam jaldi honge aur aapka confidence badhega.</p><ul><li><span>✓</span> Mobile ka smart use</li><li><span>✓</span> Ghar ka better planning</li><li><span>✓</span> Bachchon ki study mein help</li><li><span>✓</span> Side income ke naye ideas</li></ul></div></section>
-      <section id="start" className="cta-section"><div className="wrap cta-box"><div><div className="eyebrow light"><span>✦</span> Dolly Raj ke saath pehla step lijiye</div><h2>AI difficult nahi hai.<br /><em>Aap bilkul seekh sakti hain. ♡</em></h2><p>Bas 3 cheezein chahiye — mobile, internet aur seekhne ki ichha.</p></div><div className="cta-action"><a className="button whatsapp" href="https://wa.me/?text=Hi%20Dolly%2C%20mujhe%20simple%20Hindi%2FHinglish%20mein%20AI%20seekhna%20hai." target="_blank" rel="noopener noreferrer"><span className="wa-icon">◉</span><span>Dolly ko WhatsApp karein<small>“Hi Dolly, mujhe AI seekhna hai.”</small></span><b>→</b></a><p>Koi pressure nahi. Pehle apne sawaal poochhiye. ☺</p></div></div></section>
+      <section id="start" className="cta-section"><div className="wrap cta-box"><div><div className="eyebrow light"><span>✦</span> Dolly Raj ke saath pehla step lijiye</div><h2>AI difficult nahi hai.<br /><em>Aap bilkul seekh sakti hain. ♡</em></h2><p>Bas 3 cheezein chahiye — mobile, internet aur seekhne ki ichha.</p></div><div className="cta-action"><a className="button whatsapp" href={whatsappUrl} target="_blank" rel="noopener noreferrer"><span className="wa-icon">◉</span><span>Dolly ko WhatsApp karein<small>“Hi Dolly, mujhe AI seekhna hai.”</small></span><b>→</b></a><p>Koi pressure nahi. Pehle apne sawaal poochhiye. ☺</p></div></div></section>
     </main>
     <footer className="wrap"><Brand /><p>Har woman ke liye technology, simple language mein.</p><span>Made with ♡ for curious minds</span></footer>
   </>;
