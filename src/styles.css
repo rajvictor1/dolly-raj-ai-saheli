@@ -70,3 +70,27 @@ h1,h2{font-weight:500;letter-spacing:-.035em}h1{font-size:clamp(49px,5.2vw,76px)
   .phone-card{right:-4px;bottom:14px;transform:rotate(2deg)}
   .family-caption{bottom:-15px}
 }
+
+/* Keep the complete family photo visible at every screen size */
+.hero-visual{min-height:420px}
+.photo-frame{
+  position:relative;
+  width:100%;
+  height:auto;
+  aspect-ratio:1266/946;
+  border-radius:40px;
+  transform:none;
+  background:#f7d7dc;
+}
+.photo-frame img{
+  position:absolute;
+  inset:0;
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+}
+.photo-frame:after{pointer-events:none}
+@media(max-width:850px){.hero-visual{min-height:510px}}
+@media(max-width:560px){.hero-visual{min-height:330px}.photo-frame{border-radius:28px}}
